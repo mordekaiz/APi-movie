@@ -1,6 +1,6 @@
 var $Form = $('form'), $Container = $('#container');
 $Container.hide();
-$Form.on('submit', function(oEvent){
+$('.btn').click(function(oEvent){
     var Url, Movie, Data;
     var apiKey = "1aa25ebe";
     oEvent.preventDefault();
@@ -14,7 +14,7 @@ Movie = $Form.find('input').val();
 			if (Data.Response === "False") {
 				$Container.hide();
 			} else {
-				$Container.find('.title').text(Data.Title);
+				$Container.find('#title').text(Data.Title);
         $Container.find('.director').text(Data.Director);
         $Container.find('.actors').text(Data.Actors);
 				$Container.find('.plot').text(Data.Plot);
@@ -26,7 +26,3 @@ Movie = $Form.find('input').val();
         }
     });
 });
-
-// $('#myModal').on('shown.bs.modal', function () {
-//  $('#myInput').trigger('')
-//})
