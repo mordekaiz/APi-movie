@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <h1>WELCOME TO MOVIE SEARCH</h1>
+
+</div>
+
+
+<div class="container">
+  <form>
+      <label>
+           <h5>Find your content</h5>
+          <input type="text" name="movie" placeholder="Search here..." />
+      </label>
+      <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Press</button>
+  </form>
+
+
+  <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="title">title</h4>
+          </div>
+          <div id="container">
+             <div class="modal-body">
+               <p class="plot">Plot</p>
+               <p class="year">Year</p>
+               <p class="director">Director</p>
+               <p class="actors">Year</p>
+               <span class="poster">Poster</span>
+              </div>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>
